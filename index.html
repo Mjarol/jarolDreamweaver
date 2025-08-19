@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bugatti Showcase</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+  <style>
+    body {
+      background-color: #121212;
+      color: #eee;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .navbar {
+      background-color: rgba(55,39,39,1.00);
+    }
+    .navbar-brand, .nav-link {
+      color: #a99759 !important;
+      font-weight: 600;
+    }
+    .nav-link:hover {
+      color: #c4b87a !important;
+    }
+    .modal-content {
+      background-color: #1e1e1e;
+      color: #eee;
+      border-radius: 8px;
+      padding: 20px;
+    }
+    .nav-tabs .nav-link {
+      color: #a99759;
+      font-weight: 600;
+      border: none;
+      border-bottom: 2px solid transparent;
+    }
+    .nav-tabs .nav-link.active {
+      border-bottom: 2px solid #a99759;
+      background-color: transparent;
+      color: #fff;
+    }
+    .tab-content {
+      margin-top: 20px;
+    }
+    .card {
+      background-color: #222;
+      border: none;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 10px #a99759;
+    }
+    .card-title {
+      color: #a99759;
+      font-weight: 700;
+    }
+    .card-text {
+      color: #ccc;
+    }
+    .carousel-item img {
+      max-height: 500px;
+      object-fit: cover;
+      width: 100%;
+      filter: brightness(70%);
+    }
+    .carousel-caption {
+      top: 40%;
+      transform: translateY(-50%);
+      color: #fff;
+      text-shadow: 1px 1px 5px #000;
+    }
+	  .carousel-item video {
+  max-height: 500px; /* igual que la imagen */
+  object-fit: cover;
+  width: 100%;
+  filter: brightness(70%);
+  display: block;
+  margin: 0 auto;
+}
+  #carouselBugatti .carousel-item img,
+  #carouselBugatti .carousel-item video {
+    width: 100%;
+    height: 600px; /* puedes ajustar este valor */
+    object-fit: cover; /* hace que la imagen o video ocupe todo el espaci o sin deformarse */
+  }
+  body,td,th {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+  </style>
+</head>
+<body>  c   
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="#">
+  <img src="bugatti_logo_icon_247421.ico" alt="Bugatti Logo" width="30" height="30" class="d-inline-block align-top">
+  Bugatti Showcase
+</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+      <span class="navbar-toggler-icon" style="filter: invert(1)"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active"><a class="nav-link" href="#inicio">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#modelos">Modelos</a></li>
+      </ul>
+    </div>
+  </nav>
+
+ <!-- Carrusel -->
+<div id="carouselBugatti" class="carousel slide" data-ride="carousel" data-interval="5000">
+  <!-- Indicadores -->
+  <ol class="carousel-indicators">
+    <li data-target="#carouselBugatti" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselBugatti" data-slide-to="1"></li>
+    <li data-target="#carouselBugatti" data-slide-to="2"></li>
+    <li data-target="#carouselBugatti" data-slide-to="3"></li>
+  </ol>
+
+  <!-- Slides -->
+  <div class="carousel-inner">
+
+    <!-- Slide 0 - Imagen -->
+    <div class="carousel-item active">
+      <video autoplay muted loop playsinline class="d-block w-100">
+        <source src="Bugatti chiron.mp4" type="video/mp4" />
+        Tu navegador no soporta el video.
+      </video>
+      <div class="carousel-caption">
+        <h1 class="display-4">Bugatti Chiron</h1>
+        <p>Potencia y lujo sin igual</p>
+      </div>
+    </div>
+
+    <!-- Slide 1 - Imagen -->
+    <div class="carousel-item">
+      <video autoplay muted loop playsinline class="d-block w-100">
+        <source src="1_2 Bugatti Veyron .mp4" type="video/mp4" />
+        Tu navegador no soporta el video.
+      </video>
+      <div class="carousel-caption">
+        <h1 class="display-4">Bugatti Veyron</h1>
+        <p>La leyenda de la velocidad</p>
+      </div>
+    </div>
+
+    <!-- Slide 2 - Imagen -->
+    <div class="carousel-item">
+       <video autoplay muted loop playsinline class="d-block w-100">
+        <source src="Bugatti divo .mp4" type="video/mp4" />
+        Tu navegador no soporta el video.
+      </video>
+      <div class="carousel-caption">
+        <h1 class="display-4">Bugatti Divo</h1>
+        <p>Diseño y aerodinámica excepcionales</p>
+      </div>
+    </div>
+
+    <!-- Slide 3 - Imagen -->
+    <div class="carousel-item">
+      <video autoplay muted loop playsinline class="d-block w-100">
+        <source src="AllVideo_01749344033553.mp4" type="video/mp4" />
+        Tu navegador no soporta el video.
+      </video>
+      <div class="carousel-caption">
+        <h1 class="display-4">Bugatti Tourbillon</h1>
+        <p>Futuro e innovación de la velocidad</p>
+      </div>
+    </div>
+
+  </div> <!-- Fin de carousel-inner -->
+
+  <!-- Controles -->
+  <a class="carousel-control-prev" href="#carouselBugatti" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+    <span class="sr-only">Anterior</span>
+  </a>
+
+  <a class="carousel-control-next" href="#carouselBugatti" role="button" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+    <span class="sr-only">Siguiente</span>
+  </a>
+</div>
+
+<!-- Script para reproducir/pausar videos según el slide -->
+<script>
+  // Al cambiar el slide, pausamos todos los videos y reproducimos solo el visible
+  $('#carouselBugatti').on('slide.bs.carousel', function (e) {
+    // Pausar todos los videos
+    $('#carouselBugatti video').each(function() {
+      this.pause();
+    });
+
+    // Detectar el video del próximo slide
+    var nextSlide = $(e.relatedTarget);
+    var video = nextSlide.find('video').get(0);
+
+    // Reproducir el video del próximo slide cuando el cambio termine
+    $(this).one('slid.bs.carousel', function () {
+      if (video) {
+        video.play().catch(error => {
+          console.log('Error reproduciendo video:', error);
+        });
+      }
+    });
+  });
+
+  // Al cargar la página, reproducir el primer video si está activo
+  $(document).ready(function () {
+    var activeVideo = $('#carouselBugatti .carousel-item.active video').get(0);
+    if (activeVideo) {
+      activeVideo.play().catch(error => {
+        console.log('Error reproduciendo video inicial:', error);
+      });
+    }
+  });
+</script>
+
+  <!-- Modelos -->
+<section id="modelos" class="container mb-5">
+  <h2 class="text-center mb-4" style="color: #a99759;">Modelos Bugatti</h2>
+  <div class="row" id="modelos-lista">
+    <div class="col-md-4 mb-4">
+      <div class="card modelo-card" data-model="chiron" data-toggle="modal" data-target="#modalModelo" style="cursor:pointer;">
+        <img src="bugatti chiron.jpg" class="card-img-top" alt="Bugatti Chiron" />
+        <div class="card-body">
+          <h5 class="card-title">Bugatti Chiron</h5>
+          <p class="card-text">El superdeportivo más potente y elegante.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="card modelo-card" data-model="veyron" data-toggle="modal" data-target="#modalModelo" style="cursor:pointer;">
+        <img src="2007 Bugatti Veyron.jpg" class="card-img-top" alt="Bugatti Veyron" />
+        <div class="card-body">
+          <h5 class="card-title">Bugatti Veyron</h5>
+          <p class="card-text">La leyenda que rompió récords de velocidad.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="card modelo-card" data-model="divo" data-toggle="modal" data-target="#modalModelo" style="cursor:pointer;">
+        <img src="𝘽𝙐𝙂𝘼𝙏𝙏𝙄 𝘿𝙄𝙑𝙊.jpg" class="card-img-top" alt="Bugatti Divo" />
+        <div class="card-body">
+          <h5 class="card-title">Bugatti Divo</h5>
+          <p class="card-text">Aerodinámica y diseño revolucionario.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="card modelo-card" data-model="tourbillon" data-toggle="modal" data-target="#modalModelo" style="cursor:pointer;">
+        <img src="Bugatti tourbillon 2.jpg" class="card-img-top" alt="Bugatti Tourbillon 2" />
+        <div class="card-body">
+          <h5 class="card-title">Bugatti Tourbillon</h5>
+          <p class="card-text">Superdeportivo de lujo.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="card modelo-card" data-model="vitesse" data-toggle="modal" data-target="#modalModelo" style="cursor:pointer;">
+        <img src="Bugatti veyron sport vitesse.jpg" class="card-img-top" alt="Bugatti Veyron Sport Vitesse" />
+        <div class="card-body">
+          <h5 class="card-title">Bugatti Veyron Sport Vitesse</h5>
+          <p class="card-text">El roadster más rápido del mundo, alcanzando 408,84 km/h.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="card modelo-card" data-model="eb110" data-toggle="modal" data-target="#modalModelo" style="cursor:pointer;">
+        <img src="Bugatti EB110.jpg" class="card-img-top" alt="Bugatti EB110" />
+        <div class="card-body">
+          <h5 class="card-title">Bugatti EB110</h5>
+          <p class="card-text">El primer superdeportivo de la marca.</p>
+        </div>
+      </div>
+    </div>
+	  <div class="col-md-4 mb-4">
+  <div class="card modelo-card" data-model="centodieci" data-toggle="modal" data-target="#modalModelo" style="cursor:pointer;">
+    <img src="bugatti centodieci.jpg" class="card-img-top" alt="Bugatti Centodieci" />
+    <div class="card-body">
+      <h5 class="card-title">Bugatti Centodieci</h5>
+      <p class="card-text">Edición limitada que rinde homenaje al EB110.</p>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-4 mb-4">
+  <div class="card modelo-card" data-model="la_voiture_noire" data-toggle="modal" data-target="#modalModelo" style="cursor:pointer;">
+    <img src="Bugatti La Voiture Noire.jpg" class="card-img-top" alt="Bugatti La Voiture Noire"/>
+    <div class="card-body">
+      <h5 class="card-title">Bugatti La Voiture Noire</h5>
+      <p class="card-text">Un exclusivo modelo único, lujo y poder.</p>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-4 mb-4">
+  <div class="card modelo-card" data-model="baby_ii" data-toggle="modal" data-target="#modalModelo" style="cursor:pointer;">
+    <img src="Bugatti Baby II.jpg" class="card-img-top" alt="Bugatti Baby II" />
+    <div class="card-body">
+      <h5 class="card-title">Bugatti Baby II</h5>
+      <p class="card-text">Versión miniatura eléctrica del Chiron para niños.</p>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-4 mb-4">
+  <div class="card modelo-card" data-model="veyron_super_sport" data-toggle="modal" data-target="#modalModelo" style="cursor:pointer;">
+    <img src="Bugatti Veyron Super Sport 2011.jpg" class="card-img-top" alt="Bugatti Veyron Super Sport" />
+    <div class="card-body">
+      <h5 class="card-title">Bugatti Veyron Super Sport</h5>
+      <p class="card-text">Versión mejorada del Veyron con más potencia.</p>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-4 mb-4">
+  <div class="card modelo-card" data-model="veyron_16_4" data-toggle="modal" data-target="#modalModelo" style="cursor:pointer;">
+    <img src="Bugatti Veyron 16.4.jpg" class="card-img-top" alt="Bugatti Veyron 16.4" />
+    <div class="card-body">
+      <h5 class="card-title">Bugatti Veyron 16.4</h5>
+      <p class="card-text">El primer Veyron con motor W16 de 16 cilindros.</p>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-4 mb-4">
+  <div class="card modelo-card" data-model="veyron_pur_sang" data-toggle="modal" data-target="#modalModelo" style="cursor:pointer;">
+    <img src="Bugatti Veyron Pur Sang.jpg" class="card-img-top" alt="Bugatti Veyron Pur Sang" />
+    <div class="card-body">
+      <h5 class="card-title">Bugatti Veyron Pur Sang</h5>
+      <p class="card-text">Edición especial con interiores exclusivos.</p>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-4 mb-4">
+  <div class="card modelo-card" data-model="veyron_grand_sport" data-toggle="modal" data-target="#modalModelo" style="cursor:pointer;">
+    <img src="Bugatti Veyron Grand Sport Vitesse.jpg" class="card-img-top" alt="Bugatti Veyron Grand Sport" />
+    <div class="card-body">
+      <h5 class="card-title">Bugatti Veyron Grand Sport</h5>
+      <p class="card-text">Versión convertible del Veyron.</p>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-4 mb-4">
+  <div class="card modelo-card" data-model="veyron_grand_sport_veyron" data-toggle="modal" data-target="#modalModelo" style="cursor:pointer;">
+    <img src="Bugatti Veyron Grand Sport-.jpg" class="card-img-top" alt="Bugatti Veyron Grand Sport Vitesse" />
+    <div class="card-body">
+      <h5 class="card-title">Bugatti Veyron Grand Sport Vitesse</h5>
+      <p class="card-text">Roadster rápido y potente, con diseño icónico.</p>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-4 mb-4">
+  <div class="card modelo-card" data-model="eb110_gt" data-toggle="modal" data-target="#modalModelo" style="cursor:pointer;">
+    <img src="1993 Bugatti EB110 GT.jpg" class="card-img-top" alt="Bugatti EB110 GT" />
+    <div class="card-body">
+      <h5 class="card-title">Bugatti EB110 GT</h5>
+      <p class="card-text">Versión GT del clásico EB110 con mejor performance.</p>
+    </div>
+  </div>
+</div>
+  </div>
+</section>
+	
+<!-- Modal -->
+<div class="modal fade" id="modalModelo" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header border-0">
+        <h5 class="modal-title" id="modalTitulo">Modelo Bugatti</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar" style="color:#a99759;opacity:1;">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h6 style="color:#a99759;">Datos del vehículo</h6>
+        <ul id="info-vehiculo"></ul>
+        <h6 class="mt-3" style="color:#a99759;">Detalles de fábrica</h6>
+        <ul id="info-fabrica"></ul>
+        <div class="row mt-3" id="galeria-piezas"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Scripts Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<!-- Script personalizado -->
+<script>
+  const modelosBugatti = {
+    chiron: {
+      tipo: "Superdeportivo",
+      creador: "Bugatti Automobiles",
+      año: "2016",
+      precio: "$3,000,000",
+      motor: "W16 quad-turbo",
+      materiales: "Fibra de carbono, titanio, aluminio",
+      transmision: "Automática de doble embrague de 7 velocidades",
+      piezas: ["./Imagenes/motor-w16-bugatti-chiron-super-sport-2547459.jpg", "./Imagenes/Bugatti chiron azul.jpg"]
+    },
+    veyron: {
+      tipo: "Hiperauto",
+      creador: "Bugatti Automobiles",
+      año: "2005",
+      precio: "$1,700,000",
+      motor: "W16 quad-turbo",
+      materiales: "Aluminio, fibra de carbono",
+      transmision: "Automática de 7 velocidades",
+      piezas: ["./Imagenes/bugatti-veyron-164-pur-sang-c602409062015151520_6.jpg", "./Imagenes/Bugatti veyron negro.jpg"]
+    },
+    divo: {
+      tipo: "Superdeportivo de pista",
+      creador: "Bugatti Automobiles",
+      año: "2018",
+      precio: "$5,800,000",
+      motor: "W16 quad-turbo",
+      materiales: "Fibra de carbono, titanio",
+      transmision: "Automática de doble embrague",
+      piezas: ["./Imagenes/bugatti Divo interior.jpg", "./Imagenes/Bugatti divo 1 .jpg"]
+    },
+    tourbillon: {
+      tipo: "Superdeportivo de lujo",
+      creador: "Bugatti",
+      año: "2024",
+      precio: "$4,800,000",
+      motor: "Híbrido V16",
+      materiales: "Carbono, aluminio reforzado",
+      transmision: "Automática híbrida",
+      piezas: ["./Imagenes/Bugatti Tourbillon .jpg", "./Imagenes/Bugatti Tourbillon 1.jpg"]
+    },
+    vitesse: {
+      tipo: "Roadster de alto rendimiento",
+      creador: "Bugatti",
+      año: "2013",
+      precio: "$2,500,000",
+      motor: "W16 quad-turbo",
+      materiales: "Fibra de carbono reforzada",
+      transmision: "Automática de 7 velocidades",
+      piezas: ["./Imagenes/Bugatti_Veyron_Vitesse_5100-9.jpg", "./Imagenes/Large Image_15.jpg"]
+    },
+    eb110: {
+      tipo: "Superdeportivo clásico",
+      creador: "Bugatti Automobili S.p.A.",
+      año: "1991",
+      precio: "$700,000",
+      motor: "V12 quad-turbo",
+      materiales: "Aluminio y fibra de carbono",
+      transmision: "Manual de 6 velocidades",
+      piezas: ["./Imagenes/403cc4dbfa596f89128accc59a78a455.jpg", "./Imagenes/15f9e74acf62174df25b8c100c50b17d.jpg"]
+    },
+	centodieci: {
+       tipo: "Superdeportivo edición limitada",
+       creador: "Bugatti Automobiles",
+       año: "2019",
+       precio: "$9,000,000",
+       motor: "W16 quad-turbo",
+       materiales: "Fibra de carbono, aluminio",
+       transmision: "Automática de doble embrague de 7 velocidades",
+      piezas: ["./Imagenes/Bugatti-Centodieci-Interior-14.jpg", "./Imagenes/Supert sport.jpg"]
+    },
+     la_voiture_noire: {
+  tipo: "Modelo único de lujo",
+  creador: "Bugatti Automobiles",
+  año: "2019",
+  precio: "$18,900,000",
+  motor: "W16 quad-turbo",
+  materiales: "Fibra de carbono, aluminio reforzado",
+  transmision: "Automática de doble embrague",
+  piezas: ["./Imagenes/450_1000 (1).jpg", "./Imagenes/187m-bugatti-la-voiture-noire-geneva-car-is-a-mockup-production-set-for-2022-132839_1.jpg"]
+},
+baby_ii: {
+  tipo: "Mini vehículo eléctrico para niños",
+  creador: "Bugatti Automobiles",
+  año: "2021",
+  precio: "$35,000",
+  motor: "Eléctrico 2x motores",
+  materiales: "Fibra de carbono y plástico reforzado",
+  transmision: "Automática simple",
+  piezas: ["./Imagenes/95-bugatti-eb110-gt-greatest-road-tests-dashboard.jpg", "./Imagenes/Untitled-design-72.jpg"]
+},
+veyron_super_sport: {
+  tipo: "Hiperauto mejorado",
+  creador: "Bugatti Automobiles",
+  año: "2010",
+  precio: "$2,500,000",
+  motor: "W16 quad-turbo",
+  materiales: "Aluminio, fibra de carbono",
+  transmision: "Automática de 7 velocidades",
+  piezas: ["./Imagenes/989cec872f3fc6ec7a302b02babd3086.jpg", "./Imagenes/Bugatti Chiron Super Sport_.jpg"]
+},
+veyron_16_4: {
+  tipo: "Hiperauto clásico",
+  creador: "Bugatti Automobiles",
+  año: "2005",
+  precio: "$1,700,000",
+  motor: "W16 quad-turbo",
+  materiales: "Aluminio y fibra de carbono",
+  transmision: "Automática de 7 velocidades",
+  piezas: ["./Imagenes/Amian-Cars-BUGATTI-VEYRON-16-4-SUPER-SPORT-LG2A9300.jpg", "./Imagenes/Bugatti-Veyron-16.4_sang-noir-scaled.jpg"]
+},
+veyron_pur_sang: {
+  tipo: "Edición especial exclusiva",
+  creador: "Bugatti Automobiles",
+  año: "2012",
+  precio: "$3,000,000",
+  motor: "W16 quad-turbo",
+  materiales: "Fibra de carbono y cuero",
+  transmision: "Automática de 7 velocidades",
+  piezas: ["./Imagenes/e2911291a87055943550aa1d825440c1.jpg", "./Imagenes/26525485a0004f2242df4c41bcf95bcf.jpg"]
+},
+veyron_grand_sport: {
+  tipo: "Convertible deportivo",
+  creador: "Bugatti Automobiles",
+  año: "2009",
+  precio: "$2,000,000",
+  motor: "W16 quad-turbo",
+  materiales: "Fibra de carbono y aluminio",
+  transmision: "Automática de 7 velocidades",
+  piezas: ["./Imagenes/BUOWFVNJARBTNASVBBUW6NGZZY.jpg", "./Imagenes/258d9fe4267728ec15d383259b37e581.jpg"]
+},
+veyron_grand_sport_veyron: {
+  tipo: "Roadster de alto rendimiento",
+  creador: "Bugatti Automobiles",
+  año: "2012",
+  precio: "$2,300,000",
+  motor: "W16 quad-turbo",
+  materiales: "Fibra de carbono y aluminio",
+  transmision: "Automática de 7 velocidades",
+  piezas: ["./Imagenes/a90a45ee81149fe27d839ad6bb176921.jpg", "./Imagenes/{49C326FC-30D1-488E-BB65-4759E7CA1779}_Bugatti_Veyron_Engine-280x240.jpg"]
+},
+eb110_gt: {
+  tipo: "Superdeportivo clásico",
+  creador: "Bugatti (antes Italdesign)",
+  año: "1992",
+  precio: "$500,000",
+  motor: "V12 biturbo",
+  materiales: "Aluminio y fibra de carbono",
+  transmision: "Manual de 6 velocidades",
+  piezas: ["./Imagenes/vol-22-bugatii-eb110-3-65efbc7fef984.jpg", "./Imagenes/Manual de 6 velocidades.jpg"]
+}
+  };
+	
+  // Evento para abrir modal y cargar datos
+  document.querySelectorAll('.modelo-card').forEach(card => {
+    card.addEventListener('click', () => {
+      const modelo = card.getAttribute('data-model');
+      const datos = modelosBugatti[modelo];
+      if (!datos) return;
+
+      // Cambiar título modal
+      document.getElementById('modalTitulo').textContent = `Bugatti ${modelo.charAt(0).toUpperCase() + modelo.slice(1)}`;
+
+      // Llenar info del vehículo
+      document.getElementById('info-vehiculo').innerHTML = `
+        <li><strong>Tipo:</strong> ${datos.tipo}</li>
+        <li><strong>Creador:</strong> ${datos.creador}</li>
+        <li><strong>Año de lanzamiento:</strong> ${datos.año}</li>
+        <li><strong>Precio:</strong> ${datos.precio}</li>
+      `;
+
+      // Llenar info de fábrica
+      document.getElementById('info-fabrica').innerHTML = `
+        <li><strong>Motor:</strong> ${datos.motor}</li>
+        <li><strong>Materiales:</strong> ${datos.materiales}</li>
+        <li><strong>Transmisión:</strong> ${datos.transmision}</li>
+      `;
+
+      // Galería de piezas
+      document.getElementById('galeria-piezas').innerHTML = datos.piezas.map(img => `
+        <div class="col-6 mb-2">
+          <img src="${img}" class="img-fluid rounded" alt="Pieza">
+        </div>
+      `).join('');
+    });
+  });
+</script>
+		</body>
+</html>
